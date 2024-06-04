@@ -58,7 +58,7 @@ async function getRepos() {
 	resultsList.style.display = 'block'
 }
 
-searchField.addEventListener('input', () => {
+document.querySelector('.search__field').addEventListener('input', () => {
 	clearTimeout(time)
 	time = setTimeout(getRepos, 1000)
 })
